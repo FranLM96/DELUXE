@@ -4,7 +4,7 @@ import { useLanguage } from '../../context/LanguageContext';
 
 const Logo = () => (
     <img 
-        src="/logos/deluxe-logo.png" 
+        src="/images/deluxe-logo.png" 
         alt="Deluxe Logo" 
         className="h-20 w-auto drop-shadow-[0_0_20px_rgba(2,230,245,0.6)] animate-pulse"
     />

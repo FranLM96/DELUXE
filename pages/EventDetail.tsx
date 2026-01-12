@@ -154,15 +154,15 @@ const EventDetail: React.FC = () => {
             />
             {/* Hero Section */}
             <section 
-                className="relative h-[60vh] md:h-[75vh] flex items-end -mt-36 lg:-mt-44" 
+                className="relative h-[60vh] md:h-[75vh] flex items-end -mt-28 sm:-mt-32 pt-[90px]" 
                 aria-label={`Imagen de ${event.title}`}
             >
                 <img src={event.imageUrl} alt={`Póster oficial de ${event.title}`} className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
                 <div className="relative z-10 container mx-auto px-6 pb-16">
-                    <h1 className="pt-20 text-3xl md:text-5xl lg:text-6xl font-black tracking-tighter mb-4 leading-none uppercase">{event.title}</h1>
-                    <p className="text-cyan-400 font-black tracking-[0.4em] uppercase text-lg animate-fade-in">{t('event_detail.exclusive')}</p>
-                    <div className="mt-8 flex flex-wrap items-center gap-6 md:gap-10 text-lg font-black uppercase tracking-widest text-white/80">
+                    <p className="text-cyan-400 font-black tracking-[0.4em] uppercase text-sm mb-4 animate-fade-in">{t('event_detail.exclusive')}</p>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter mb-8 leading-none uppercase">{event.title}</h1>
+                    <div className="flex flex-wrap items-center gap-6 md:gap-10 text-lg font-black uppercase tracking-widest text-white/80">
                         <span className="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/10"><FiCalendar className="h-6 w-6 mr-3 text-cyan-400" /> {event.date}</span>
                         <span className="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/10"><FiMapPin className="h-6 w-6 mr-3 text-indigo-400" /> {event.location}</span>
                         <div className="flex gap-4">

@@ -2,7 +2,6 @@
 export const translations = {
   es: {
     nav: {
-      menu: "Menú",
       home: "Inicio",
       events: "Eventos",
       sessions: "Sesiones",
@@ -184,7 +183,6 @@ export const translations = {
   },
   en: {
     nav: {
-      menu: "Menu",
       home: "Home",
       events: "Events",
       sessions: "Sessions",
