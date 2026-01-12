@@ -11,7 +11,7 @@ import { HiTicket } from 'react-icons/hi2';
 
 const Logo = () => (
     <img 
-        src="/logos/deluxe-logo.png" 
+        src="./logos/deluxe-logo.png" 
         alt="Deluxe Logo" 
         className="h-20 w-auto drop-shadow-[0_0_12px_rgba(2,230,245,0.4)]"
     />
