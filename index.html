@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deluxe | Elite Music Experience</title>
+
+    <link rel="icon" type="image/png" href="/images/deluxe-logo.png" />
+
+    <!-- Meta Tags -->
+    <meta name="description" content="The ultimate electronic music scene in Mexico. Join the elite." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        background-color: #020617;
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* Deluxe Smooth Scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Professional Micro-interactions */
+      .glass-effect {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      @keyframes ken-burns {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.15); }
+      }
+
+      .animate-ken-burns {
+        animation: ken-burns 20s ease-out infinite alternate;
+      }
+
+      @keyframes reveal-up {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .reveal {
+        animation: reveal-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 5px; }
+      ::-webkit-scrollbar-track { background: #020617; }
+      ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+      ::-webkit-scrollbar-thumb:hover { background: #02e6f5; }
+
+      /* Remove focus outline for a cleaner look while maintaining accessibility */
+      :focus-visible {
+        outline: 2px solid #02e6f5;
+        outline-offset: 4px;
+      }
+    </style>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4",
+        "react-icons/fi": "https://aistudiocdn.com/react-icons@^5.2.1/fi",
+        "react-icons/fa": "https://aistudiocdn.com/react-icons@^5.2.1/fa",
+        "react-icons/hi2": "https://aistudiocdn.com/react-icons@^5.2.1/hi2",
+        "react-icons/fc": "https://aistudiocdn.com/react-icons@^5.2.1/fc",
+        "react-icons/": "https://aistudiocdn.com/react-icons@^5.5.0/"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
